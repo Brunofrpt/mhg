@@ -1,0 +1,250 @@
+/****** General ***********/
+
+:root {
+
+    --couleur-primaire: #F2F2F2;
+    --couleur-secondaire: #FBA70B;
+    --couleur-cecondaire-claire: #FFF2DA;
+    --couleur-secondaire-foncee: #E59400;
+    --couleur-texte: #111;
+    --couleur-texte-2: #fff;
+    --fond-1: #fff;
+    --fond-2: #FBF7EF;
+    /****** couleurs dégradé ***********/
+    --couleur-1: #FBA70B;
+    --couleur-2: #F7A200;
+    --couleur-3: #F39A00;
+
+}
+
+/* Typo */
+h1 {font-size: 2rem; margin: 0;}
+
+h2 {font-size: 1.75rem; margin: 0;}
+
+h3 {font-size: 1.5rem; margin: 0;}
+
+h4 {font-size: 1.25rem; margin: 0;}
+
+p {font-size: 1rem; margin: 0 0 12px;}
+
+body {font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;margin: 0;}
+
+
+/* Reset léger */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--couleur-secondaire);
+    outline-offset: 2px;
+}
+
+
+/****** header ***********/
+
+.nav {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+
+}
+
+.nav__logo {
+    
+  font-family: "Allura", cursive;
+  font-size: 30px;
+  line-height: 1;
+  color: var(--couleur-texte);
+  text-decoration: none;
+  white-space: nowrap;
+  text-align: center;
+
+}
+
+.nav__bar {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.nav__link {
+
+    font-size: 8px;
+    font-weight: 500;
+    color: var(--couleur-texte);
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 999px;
+
+}
+
+.nav__link:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.nav__link + .nav__link::before {
+  content: "•";
+  margin: 0 6px;
+  color: var(--couleur-secondaire);
+}
+
+/****** section Presentation ***********/
+
+.presentation {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.presentation__header {
+
+    color: var(--couleur-texte-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0;
+    width: 100%;
+    /* 1) halo lumineux + 2) dégradé principal */
+    background:radial-gradient(ellipse at 50% 35%,rgba(255, 255, 255, 0.18) 0%,rgba(255, 255, 255, 0.00) 55%),linear-gradient(180deg,var(--couleur-1) 0%,var(--couleur-2) 55%,var(--couleur-3) 100%);
+    
+}
+
+.presentation__titre {
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+
+}
+
+.presentation__soulignement {
+  display: block;
+  width: 220px;
+  height: 1px;
+  margin: 3px auto 19px;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+
+
+.presentation__sous-titre {
+
+    font-size: 14px;
+    text-align: center;
+}
+
+.presentation__cadre {
+
+    width: 220px;              /* taille du rond */
+    aspect-ratio: 1 / 1;       /* garantit un carré */
+    border-radius: 50%;
+    border: 6px solid #fff;    /* bord blanc (épaisseur) */
+    overflow: hidden;          /* coupe l'image en rond */
+
+}
+
+.presentation__photo {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         /* remplit bien sans déformer */
+    display: block;
+
+}
+
+.presentation__carte {
+
+    background: var(--fond-2);                 
+    border: 1px solid #EFE7DB;           /* contour léger */
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    padding: 22px 18px;
+    width: calc(100% - 15px);            /* marge gauche/droite */
+    max-width: 340px;                    /* comme la capture */
+    margin: 16px auto;
+    border-top: 2px solid var(--couleur-secondaire);                   /* centrée + respiratio*/
+
+}
+
+.presentation__section-titre {
+
+    text-align: center;
+    font-weight: 400;
+    padding: 0 0 21px;
+    font-size: 24px;
+}
+
+.presentation__section-titre::after {
+
+    content:"";
+    display: block;
+    width: 145px;
+    height: 2px;
+    margin: 10px auto 0px;
+    background: var(--couleur-cecondaire-claire);
+
+}
+
+.presentation__description {
+
+    font-size: 15px;
+    
+}
+
+.presentation__raison{
+
+  position: relative;
+  padding-left: 18px;
+  
+}
+
+.presentation__raison::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;        /* centré verticalement par rapport à la ligne */
+  width: 6px;         /* taille du point */
+  height: 6px;
+  border-radius: 50%;
+  background: var(--couleur-secondaire);
+}
+
+/****** section Portfolio ***********/
+
+.portfolio__previsualisation {
+
+    width: 100%;
+    max-width: 375px;
+
+}
+    
