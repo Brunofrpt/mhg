@@ -15,20 +15,18 @@
     --couleur-2: #F7A200;
     --couleur-3: #F39A00;
 
+    --gap1: 12px;
+    --gap2: 14px;
 }
 
+
+
 /* Typo */
-h1 {font-size: 2rem; margin: 0;}
 
-h2 {font-size: 1.75rem; margin: 0;}
-
-h3 {font-size: 1.5rem; margin: 0;}
-
-h4 {font-size: 1.25rem; margin: 0;}
-
-p {font-size: 1rem; margin: 0 0 12px;}
-
-body {font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;margin: 0;}
+body {
+    font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    margin: 0;
+}
 
 
 /* Reset léger */
@@ -62,6 +60,8 @@ a:focus-visible {
     outline: 2px solid var(--couleur-secondaire);
     outline-offset: 2px;
 }
+
+h1, h2, h3, p { margin: 0; }
 
 
 /****** header ***********/
@@ -118,6 +118,8 @@ a:focus-visible {
 
 /****** section Presentation ***********/
 
+/*-------{header}--------*/
+
 .presentation {
     
     display: flex;
@@ -132,6 +134,7 @@ a:focus-visible {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: var(--gap2);
     padding: 32px 0;
     width: 100%;
     /* 1) halo lumineux + 2) dégradé principal */
@@ -183,8 +186,13 @@ a:focus-visible {
 
 }
 
+/*-------{carte}--------*/
+
 .presentation__carte {
 
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap2);
     background: var(--fond-2);                 
     border: 1px solid #EFE7DB;           /* contour léger */
     border-radius: 4px;
@@ -201,7 +209,6 @@ a:focus-visible {
 
     text-align: center;
     font-weight: 400;
-    padding: 0 0 21px;
     font-size: 24px;
 }
 
@@ -211,7 +218,7 @@ a:focus-visible {
     display: block;
     width: 145px;
     height: 2px;
-    margin: 10px auto 0px;
+    margin: 14px auto 0px;
     background: var(--couleur-cecondaire-claire);
 
 }
@@ -222,22 +229,33 @@ a:focus-visible {
     
 }
 
+.presentation__raisons {
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap2);
+
+}
+
 .presentation__raison{
 
-  position: relative;
-  padding-left: 18px;
+    position: relative;
+    padding-left: 18px;
+    font-size: 15px;
   
 }
 
 .presentation__raison::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.55em;        /* centré verticalement par rapport à la ligne */
-  width: 6px;         /* taille du point */
-  height: 6px;
-  border-radius: 50%;
-  background: var(--couleur-secondaire);
+
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.55em;        /* centré verticalement par rapport à la ligne */
+    width: 6px;         /* taille du point */
+    height: 6px;
+    border-radius: 50%;
+    background: var(--couleur-secondaire);
+
 }
 
 /****** section Portfolio ***********/
