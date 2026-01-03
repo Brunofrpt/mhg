@@ -165,7 +165,29 @@
   
 } 
 
+/*------{liste} ---------*/
 
+.presentation__fond-listes {
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap2);
+
+}
+
+.presentation__titre-liste {
+
+    color: var(--couleur-secondaire);
+
+}
+
+.presentation__liste {
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap1);
+
+}
 
 /****** section Portfolio ***********/
 

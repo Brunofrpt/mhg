@@ -33,6 +33,27 @@
 
 }
 
+.carte__citrons {
+
+    background-image: url(../../images/thumbnail_eiliv-aceron-Rx-V4IbqKhU-unsplash.jpg);
+
+}
+    
+/*******liens********/
+
+.liens-directs {
+
+    color: var(--couleur-secondaire);
+    text-decoration: underline;
+
+}
+
+.icone {
+
+    color: var(--couleur-secondaire);
+
+}
+
 /*******trait********/
 
 .trait {
