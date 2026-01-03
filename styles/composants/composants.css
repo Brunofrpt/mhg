@@ -1,10 +1,9 @@
 /** Bulles points **/
 
-.points__items{
+.points__item{
 
     position: relative;
     padding-left: 18px;
-    font-size: 15px;
   
 }
 
@@ -17,6 +16,6 @@
     width: 6px;         /* taille du point */
     height: 6px;
     border-radius: 50%;
-    background: var(--couleur-secondaire);
+    background: var(--couleur-bulle, var(--couleur-secondaire));
 
 }

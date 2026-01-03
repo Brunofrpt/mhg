@@ -4,15 +4,25 @@
     --couleur-secondaire: #FBA70B;
     --couleur-cecondaire-claire: #FFF2DA;
     --couleur-secondaire-foncee: #E59400;
+
+    /****** couleurs texte ****/
     --couleur-texte: #111;
     --couleur-texte-2: #fff;
+
+    /*couleur fonds*/
     --fond-1: #fff;
     --fond-2: #FBF7EF;
+
     /****** couleurs dégradé ***********/
     --couleur-1: #FBA70B;
     --couleur-2: #F7A200;
     --couleur-3: #F39A00;
 
+    /*gap*/
     --gap1: 12px;
     --gap2: 14px;
+
+    /*composants*/
+
+    --couleur-bulle: #FBA70B;
 }

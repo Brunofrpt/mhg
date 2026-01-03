@@ -1,68 +1,3 @@
-/****** General ***********/
-
-/* :root {
-
-    --couleur-primaire: #F2F2F2;
-    --couleur-secondaire: #FBA70B;
-    --couleur-cecondaire-claire: #FFF2DA;
-    --couleur-secondaire-foncee: #E59400;
-    --couleur-texte: #111;
-    --couleur-texte-2: #fff;
-    --fond-1: #fff;
-    --fond-2: #FBF7EF;
-    /****** couleurs dégradé ***********/
-    /* --couleur-1: #FBA70B;
-    --couleur-2: #F7A200;
-    --couleur-3: #F39A00;
-
-    --gap1: 12px;
-    --gap2: 14px;
-} */ 
-
-
-
-/* Typo */
-
-/* body {
-    font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-    margin: 0;
-} */
-
-
-/* Reset léger */
-/* *,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-ul,
-ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-a,
-a:visited,
-a:hover,
-a:active,
-a:focus {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:focus-visible {
-    outline: 2px solid var(--couleur-secondaire);
-    outline-offset: 2px;
-}
-
-h1, h2, h3, p { margin: 0; } */
-
 
 /****** header ***********/
 
@@ -239,24 +174,11 @@ h1, h2, h3, p { margin: 0; } */
 
 .presentation__raison{
 
-    position: relative;
-    padding-left: 18px;
     font-size: 15px;
   
-}
+} 
 
-.presentation__raison::before{
 
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.55em;        /* centré verticalement par rapport à la ligne */
-    width: 6px;         /* taille du point */
-    height: 6px;
-    border-radius: 50%;
-    background: var(--couleur-secondaire);
-
-}
 
 /****** section Portfolio ***********/
 
