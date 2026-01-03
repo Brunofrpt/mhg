@@ -2,7 +2,7 @@
 
     --couleur-primaire: #F2F2F2;
     --couleur-secondaire: #FBA70B;
-    --couleur-cecondaire-claire: #FFF2DA;
+    --couleur-secondaire-claire: #FFF2DA;
     --couleur-secondaire-foncee: #E59400;
 
     /****** couleurs texte ****/
@@ -21,6 +21,7 @@
     /*gap*/
     --gap1: 12px;
     --gap2: 14px;
+    --gap-sections: 89px;
 
     /*composants*/
 
