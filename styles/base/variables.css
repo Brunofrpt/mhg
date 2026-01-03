@@ -1,0 +1,18 @@
+:root {
+
+    --couleur-primaire: #F2F2F2;
+    --couleur-secondaire: #FBA70B;
+    --couleur-cecondaire-claire: #FFF2DA;
+    --couleur-secondaire-foncee: #E59400;
+    --couleur-texte: #111;
+    --couleur-texte-2: #fff;
+    --fond-1: #fff;
+    --fond-2: #FBF7EF;
+    /****** couleurs dégradé ***********/
+    --couleur-1: #FBA70B;
+    --couleur-2: #F7A200;
+    --couleur-3: #F39A00;
+
+    --gap1: 12px;
+    --gap2: 14px;
+}
