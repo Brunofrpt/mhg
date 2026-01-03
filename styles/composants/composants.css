@@ -51,6 +51,8 @@
 .icone {
 
     color: var(--couleur-secondaire);
+    font-size: 34px;
+    text-align: center;
 
 }
 
