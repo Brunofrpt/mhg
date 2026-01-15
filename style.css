@@ -1,3 +1,13 @@
+main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-sections);
+
+
+}
+
 
 /****** header ***********/
 
@@ -134,17 +144,6 @@
     gap: var(--gap2);
 }
 
-.presentation__section-titre::after {
-
-    /* content:"";
-    display: block;
-    width: 145px;
-    height: 2px;
-    margin: 14px auto 0px;
-    background: var(--couleur-secondaire-claire); */
-
-}
-
 .presentation__description {
 
     font-size: 15px;
@@ -190,15 +189,6 @@
 
 }
 
-/****** section Portfolio ***********/
-
-.portfolio__previsualisation {
-
-    width: 100%;
-    max-width: 375px;
-
-}
-
 /****** section Compétences ***********/
 
 .competences {
@@ -207,6 +197,14 @@
     align-items: center;
     gap: var(--gap-sections);
 
+}
+
+.competences__liste {
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap1);
+    
 }
 
 .competences__fond-listes {
@@ -230,17 +228,67 @@
 
 }
 
+/****** section Portfolio ***********/
+
+.portfolio {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.portfolio__previsualisation {
+
+    width: 100%;
+    max-width: 375px;
+    
+
+}
+
+/****** section prestations********/
+
+.prestations {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 /****** section Contact ***********/
 
 .contact {
 
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap1);
     color: var(--couleur-texte-2);
     text-align: center;
+    
 
 }
 
+/*****créer composant****/
 .contact__bloc--fonce{
 
     background-color: var(--couleur-secondaire-foncee);
+    padding: 22px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap1);
+
+}
+
+.contact__lien--calendly {
+
+    background-color: white;
+    color: var(--couleur-texte-3);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 
 }
