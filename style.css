@@ -199,6 +199,14 @@ main {
 
 }
 
+.competences__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap2);
+    color: var(--couleur-texte-2);
+}
+
 .competences__liste {
 
     display: flex;
@@ -270,6 +278,10 @@ main {
 
 }
 
+.contact__lien {
+    color: var(--couleur-texte-2);
+}
+
 /*****créer composant****/
 .contact__bloc--fonce{
 
@@ -290,5 +302,13 @@ main {
     align-items: center;
     justify-content: center;
     
+
+}
+
+.contact__bloc {
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap1);
 
 }
