@@ -48,7 +48,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 320px;
+    min-height: 200px;
     overflow: hidden;
     position: relative;
 
@@ -142,8 +142,13 @@
 @media (min-width: 768px){
 
     .trait--plein { width: xxx;
+    }
 
+    .trait--presentation-tab {
+        margin: 0;
+    }
 
-
+    .trait--moyen {
+        width: 312px;
     }
 }

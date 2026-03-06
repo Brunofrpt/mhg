@@ -4,7 +4,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: var(--gap-sections);
-
+    padding: 20px;
 
 }
 
@@ -71,6 +71,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 89px;
+    width: 100%;
 }
 
 .presentation__header {
@@ -128,9 +129,8 @@ main {
     display: flex;
     flex-direction: column;
     gap: var(--gap2);
-    width: calc(100% - 15px);            /* marge gauche/droite */
-    max-width: 340px;                    /* comme la capture */
-    margin-top: -89px;
+    width: calc(100% - 15px);            /* marge gauche/droite */                   /* comme la capture */
+    /* margin-top: -89px; */
    
 }
 
@@ -171,6 +171,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: var(--gap2);
+    width: 100%;
     /* margin-top: -89px; */
 
 }
@@ -204,6 +205,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: var(--gap2);
+    padding: 20px;
     color: var(--couleur-texte-2);
 }
 
@@ -258,11 +260,11 @@ main {
 /****** section prestations********/
 
 .prestations {
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    padding: 10px;
+    gap: 10px; 
 }
 
 /****** section Contact ***********/
@@ -280,6 +282,7 @@ main {
 
 .contact__lien {
     color: var(--couleur-texte-2);
+    text-decoration: underline;
 }
 
 /*****créer composant****/
@@ -301,7 +304,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    text-decoration: underline;
 
 }
 
@@ -310,5 +313,45 @@ main {
     display: flex;
     flex-direction: column;
     gap: var(--gap1);
-
 }
+
+.contact__lien {
+    text-decoration: underline;
+}
+
+/****************************** media queries *********************************/
+
+/****** section Presentation ***********/
+
+@media (min-width: 768px) {
+
+    main {
+        padding-top: 0;
+    }
+    
+    .nav {
+        flex-direction: row;
+        padding: 15px 23px;
+    }
+
+    .presentation__header {
+        position: relative;
+        align-items: flex-start;
+        padding: 30px;
+        width: 100vw;
+    }
+
+    .presentation__titre {
+        font-size: 30px;
+    }
+
+    .presentation__sous-titre {
+        text-align: left;
+        font-size: 18px;
+    }
+    .presentation__cadre {
+        position: absolute;
+        right: 70px;
+    }
+}
+
