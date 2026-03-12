@@ -2,15 +2,36 @@
 <html lang="fr">
 
 <head>
+    <!--Meta de base-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Marie-Hermine Gay - rédactrice persuasive et cheffe de projets 
     en communication. Portfolio, compétences et contact">
     <title>Marie Hermine Gay</title>
+    <!--Réseaux Sociaux-->
+    <meta property="og:type" content="website">
+	<meta property="og:title" content="Marie-Hermine Gay - Rédactrice persuasive &
+    chef de projets en communication à Paris">
+	<meta property="og:description"
+		content="Découvrez le portfolio de Marie Hermine, Rédactrice persuasive &
+        chef de projets en communication : galerie, services, tarifs et contact.">
+	<meta property="og:url" content="#">
+	<meta property="og:image" content="#">
+	<meta property="og:locale" content="fr_FR">
+
+    <meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Marie-Hermine Gay - Rédactrice persuasive &
+    chef de projets en communication à Paris">
+	<meta name="twitter:description"
+		content="Découvrez le portfolio de Marie Hermine, Rédactrice persuasive &
+        chef de projets en communication : galerie, services, tarifs et contact.">
+	<meta name="twitter:image" content="#">
+    <!--Performance Police-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!--Styles-->
     <link rel="stylesheet" href="styles/base/variables.css">
     <link rel="stylesheet" href="styles/base/reset.css">
     <link rel="stylesheet" href="styles/base/typography.css">
@@ -104,41 +125,45 @@
 
             <span class="trait trait--plein trait--couleur-secondaire"></span>
             <div class="presentation__fond-listes carte">
-                <i class="fa-solid fa-heart icone"></i>
-                <span class="trait trait--plein trait--couleur-secondaire"></span>
-                <h3 class="presentation__titre-liste">Mes qualités de cœur</h3>
-                <span class="trait trait--plein trait--couleur-secondaire"></span>
-                <ul class="presentation__liste presentation__liste--qualites">
-                    <li class="presentation__liste-item points__item">Sens de l'écoute client</li>
-                    <li class="presentation__liste-item points__item">Curieuse</li>
-                    <li class="presentation__liste-item points__item">Rigoureuse</li>
-                    <li class="presentation__liste-item points__item">Organisée</li>
-                    <li class="presentation__liste-item points__item">Réactive</li>
-                    <li class="presentation__liste-item points__item">Relationnelle</li>
-                </ul>
-
-                <i class="fa-solid fa-book-open icone"></i>
-                <span class="trait trait--plein trait--couleur-secondaire"></span>
-                <h3 class="presentation__titre-liste">Mes passions</h3>
-                <span class="trait trait--plein trait--couleur-secondaire"></span>
-                <ul class="presentation__liste presentation__liste--passions">
-                    <li class="presentation__liste-item points__item">Le Sport &nbsp;: course à pied, randonnée, danse.</li>
-                    <li class="presentation__liste-item points__item">La photographie &nbsp;: paysages, noir et blanc.</li>
-                    <li class="presentation__liste-item points__item">Les livres &nbsp;: romans, philosophie, pièces de théâtre...
-                    </li>
-                    <li class="presentation__liste-item points__item">L'art &nbsp;: musées, théâtres, opéras.</li>
-                </ul>
-
-                <i class="fa-solid fa-laptop icone"></i>
-                <span class="trait trait--plein trait--couleur-secondaire"></span>
-                <h3 class="presentation__titre-liste">Mes compétences</h3>
-                <span class="trait trait--plein trait--couleur-secondaire"></span>
-                <ul class="presentation__liste presentation__liste--competences">
-                    <li class="presentation__liste-item points__item">Suite Adobe &nbsp;: InDesign, Photoshop, Premiere Pro,
-                        Illustrator</li>
-                    <li class="presentation__liste-item points__item">Canva</li>
-                    <li class="presentation__liste-item points__item">Newsletter &nbsp;: Brevo, Mailchimp, Substack</li>
-                </ul>
+                <div class="wrapper--listes">
+                    <i class="fa-solid fa-heart icone"></i>
+                    <span class="trait trait--plein trait--couleur-secondaire"></span>
+                    <h3 class="presentation__titre-liste">Mes qualités de cœur</h3>
+                    <span class="trait trait--plein trait--couleur-secondaire"></span>
+                    <ul class="presentation__liste presentation__liste--qualites">
+                        <li class="presentation__liste-item points__item">Sens de l'écoute client</li>
+                        <li class="presentation__liste-item points__item">Curieuse</li>
+                        <li class="presentation__liste-item points__item">Rigoureuse</li>
+                        <li class="presentation__liste-item points__item">Organisée</li>
+                        <li class="presentation__liste-item points__item">Réactive</li>
+                        <li class="presentation__liste-item points__item">Relationnelle</li>
+                    </ul>
+                </div>
+                <div class="wrapper--listes">
+                    <i class="fa-solid fa-book-open icone"></i>
+                    <span class="trait trait--plein trait--couleur-secondaire"></span>
+                    <h3 class="presentation__titre-liste">Mes passions</h3>
+                    <span class="trait trait--plein trait--couleur-secondaire"></span>
+                    <ul class="presentation__liste presentation__liste--passions">
+                        <li class="presentation__liste-item points__item">Le Sport &nbsp;: course à pied, randonnée, danse.</li>
+                        <li class="presentation__liste-item points__item">La photographie &nbsp;: paysages, noir et blanc.</li>
+                        <li class="presentation__liste-item points__item">Les livres &nbsp;: romans, philosophie, pièces de théâtre...
+                        </li>
+                        <li class="presentation__liste-item points__item">L'art &nbsp;: musées, théâtres, opéras.</li>
+                    </ul>
+                </div>
+                <div class="wrapper--listes">
+                    <i class="fa-solid fa-laptop icone"></i>
+                    <span class="trait trait--plein trait--couleur-secondaire"></span>
+                    <h3 class="presentation__titre-liste">Mes compétences</h3>
+                    <span class="trait trait--plein trait--couleur-secondaire"></span>
+                    <ul class="presentation__liste presentation__liste--competences">
+                        <li class="presentation__liste-item points__item">Suite Adobe &nbsp;: InDesign, Photoshop, Premiere Pro,
+                            Illustrator</li>
+                        <li class="presentation__liste-item points__item">Canva</li>
+                        <li class="presentation__liste-item points__item">Newsletter &nbsp;: Brevo, Mailchimp, Substack</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -167,7 +192,6 @@
 
             <span class="trait trait--plein trait--couleur-secondaire"></span>
             <div class="competences__fond-listes carte">
-
                 <h2 class="competences__titre-liste">Mes domaines de prédilection</h2>
                 <span class="trait trait--plein trait--couleur-secondaire"></span>
                 <i class="fa-solid fa-pencil icone"></i>

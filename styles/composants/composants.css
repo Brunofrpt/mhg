@@ -44,7 +44,7 @@
 
 .carte__citrons {
 
-    background-image: url(../../images/thumbnail_eiliv-aceron-Rx-V4IbqKhU-unsplash.jpg);
+    background-image: url(../../images/citrons.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background:linear-gradient(180deg,rgba(251,167,11,0.25));
+    background:linear-gradient(180deg,rgba(251,167,11,0.55));
 }
 
 .carte__citrons::after {
@@ -150,5 +150,11 @@
 
     .trait--moyen {
         width: 312px;
+    }
+
+    .wrapper--listes {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 }

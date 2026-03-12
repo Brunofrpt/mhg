@@ -352,6 +352,13 @@ main {
     .presentation__cadre {
         position: absolute;
         right: 70px;
+        width: 255px;
     }
+
+    .presentation__fond-listes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+}
 }
 
