@@ -58,7 +58,8 @@
     content: "";
     position: absolute;
     inset: 0;
-    background:linear-gradient(180deg,rgba(251,167,11,0.55));
+    background:linear-gradient(180deg,rgba(0, 0, 0, 0.55));
+    
 }
 
 .carte__citrons::after {
@@ -136,7 +137,13 @@
 
 }
 
+/*wrappers */
 
+.wrapper--listes {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap2);
+}
 
 
 @media (min-width: 768px){
@@ -157,4 +164,8 @@
         flex-direction: column;
         gap: 10px;
     }
+
+    .oculter {
+        display: none;
+}
 }

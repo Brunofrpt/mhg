@@ -22,14 +22,14 @@ main {
 }
 
 .nav__logo {
-    
-  font-family: "Allura", cursive;
-  font-size: 30px;
-  line-height: 1;
-  color: var(--couleur-texte);
-  text-decoration: none;
-  white-space: nowrap;
-  text-align: center;
+
+    font-family: "Allura", cursive;
+    font-size: 30px;
+    line-height: 1;
+    color: var(--couleur-texte);
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: center;
 
 }
 
@@ -52,13 +52,13 @@ main {
 }
 
 .nav__link:hover {
-  background: rgba(0, 0, 0, 0.06);
+    background: rgba(0, 0, 0, 0.06);
 }
 
-.nav__link + .nav__link::before {
-  content: "•";
-  margin: 0 6px;
-  color: var(--couleur-secondaire);
+.nav__link+.nav__link::before {
+    content: "•";
+    margin: 0 6px;
+    color: var(--couleur-secondaire);
 }
 
 /****** section Presentation ***********/
@@ -66,7 +66,7 @@ main {
 /*-------{header}--------*/
 
 .presentation {
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,8 +84,8 @@ main {
     padding: 32px 0;
     width: 100%;
     /* 1) halo lumineux + 2) dégradé principal */
-    background:radial-gradient(ellipse at 50% 35%,rgba(255, 255, 255, 0.18) 0%,rgba(255, 255, 255, 0.00) 55%),linear-gradient(180deg,var(--couleur-1) 0%,var(--couleur-2) 55%,var(--couleur-3) 100%);
-    
+    background: radial-gradient(ellipse at 50% 35%, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.00) 55%), linear-gradient(180deg, var(--couleur-1) 0%, var(--couleur-2) 55%, var(--couleur-3) 100%);
+
 }
 
 .presentation__titre {
@@ -105,11 +105,15 @@ main {
 
 .presentation__cadre {
 
-    width: 220px;              /* taille du rond */
-    aspect-ratio: 1 / 1;       /* garantit un carré */
+    width: 220px;
+    /* taille du rond */
+    aspect-ratio: 1 / 1;
+    /* garantit un carré */
     border-radius: 50%;
-    border: 6px solid #fff;    /* bord blanc (épaisseur) */
-    overflow: hidden;          /* coupe l'image en rond */
+    border: 6px solid #fff;
+    /* bord blanc (épaisseur) */
+    overflow: hidden;
+    /* coupe l'image en rond */
 
 }
 
@@ -117,7 +121,8 @@ main {
 
     width: 100%;
     height: 100%;
-    object-fit: cover;         /* remplit bien sans déformer */
+    object-fit: cover;
+    /* remplit bien sans déformer */
     display: block;
 
 }
@@ -129,9 +134,11 @@ main {
     display: flex;
     flex-direction: column;
     gap: var(--gap2);
-    width: calc(100% - 15px);            /* marge gauche/droite */                   /* comme la capture */
+    width: calc(100% - 15px);
+    /* marge gauche/droite */
+    /* comme la capture */
     /* margin-top: -89px; */
-   
+
 }
 
 .presentation__section-titre {
@@ -147,7 +154,7 @@ main {
 .presentation__description {
 
     font-size: 15px;
-    
+
 }
 
 .presentation__raisons {
@@ -158,20 +165,19 @@ main {
 
 }
 
-.presentation__raison{
+.presentation__raison {
 
     font-size: 15px;
-  
-} 
+
+}
 
 /*------{liste} ---------*/
 
 .presentation__fond-listes {
-
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: var(--gap2);
-    width: 100%;
     /* margin-top: -89px; */
 
 }
@@ -214,7 +220,13 @@ main {
     display: flex;
     flex-direction: column;
     gap: var(--gap1);
-    
+
+}
+
+.competences__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap1);
 }
 
 .competences__fond-listes {
@@ -253,7 +265,7 @@ main {
 
     width: 100%;
     max-width: 375px;
-    
+
 
 }
 
@@ -264,7 +276,7 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    gap: 10px; 
+    gap: 10px;
 }
 
 /****** section Contact ***********/
@@ -276,7 +288,7 @@ main {
     gap: var(--gap1);
     color: var(--couleur-texte-2);
     text-align: center;
-    
+
 
 }
 
@@ -286,7 +298,7 @@ main {
 }
 
 /*****créer composant****/
-.contact__bloc--fonce{
+.contact__bloc--fonce {
 
     background-color: var(--couleur-secondaire-foncee);
     padding: 22px 18px;
@@ -319,6 +331,21 @@ main {
     text-decoration: underline;
 }
 
+/********* Footer ******************/
+
+svg {
+    margin-top: 89px;
+}
+
+.footer {
+    background: var(--fond-3);
+    margin-top: -65px;
+    display: flex;
+    justify-content: space-around;
+    min-height: 60px;
+    align-items: center;
+}
+
 /****************************** media queries *********************************/
 
 /****** section Presentation ***********/
@@ -328,7 +355,7 @@ main {
     main {
         padding-top: 0;
     }
-    
+
     .nav {
         flex-direction: row;
         padding: 15px 23px;
@@ -349,6 +376,7 @@ main {
         text-align: left;
         font-size: 18px;
     }
+
     .presentation__cadre {
         position: absolute;
         right: 70px;
@@ -359,6 +387,28 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
-}
-}
+    }
 
+    /***** section compétences *******/
+
+    .competences__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    .wrapper--listes {
+        position: relative;
+    }
+
+    .wrapper--listes:not(:last-child)::after {
+        content: "";
+        background-color: #FBA70B;
+        width: 1px;
+        height: 90%;
+        right: -14px;
+        position: absolute;
+    }
+}
