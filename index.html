@@ -39,6 +39,8 @@
     <link rel="stylesheet" href="styles/base/typography.css">
     <link rel="stylesheet" href="styles/composants/composants.css">
     <link rel="stylesheet" href="style.css">
+    <!--scripts-->
+    <script src="scripts/menu-burger.js" defer></script>
 </head>
 
 <body>
@@ -46,14 +48,20 @@
     <!--******************** header *********************-->
 
     <header>
-        <nav class="nav">
+        <nav class="nav" aria-label="Navigation principale">
             <a class="nav__logo" href="#">Marie-Hermine Gay</a>
-            <div class="nav__bar">
-                <a class="nav__link" href="#presentation">Qui suis-je</a>
-                <a class="nav__link" href="#competences">Compétences</a>
-                <a class="nav__link" href="#portfolio">Portfolio</a>
-                <a class="nav__link" href="#contact">Contact</a>
-            </div>
+            <button class="nav__burger-logo" type="button"
+                    aria-expanded="false" aria-controls="nav__bar" aria-label="Ouvrir le menu">
+                <span class="nav__burger-ligne"></span>
+                <span class="nav__burger-ligne"></span>
+                <span class="nav__burger-ligne"></span>
+            </button>
+            <ul class="nav__bar">
+                <li><a class="nav__link" href="#presentation">Qui suis-je</a></li>
+                <li><a class="nav__link" href="#competences">Compétences</a></li>
+                <li><a class="nav__link" href="#portfolio">Portfolio</a></li>
+                <li><a class="nav__link" href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -270,7 +278,7 @@
             <h2 class="portfolio__titre"> Pour en savoir (et voir) plus &nbsp;:</h2>
             <a class="portfolio__lien" href="https://drive.google.com/file/d/1TZdgrL8TjX13yw_gV4uNFUOEhkfrR7ze/view"
                 target="_blank" rel="noopener">
-                <img class="portfolio__previsualisation" src="images/couv_portfolio.webp"
+                <img class="portfolio__previsualisation" src="images/couv_portfolio.png"
                     alt="Aperçu de couverture du portfolio">
             </a>
         </section>

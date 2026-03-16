@@ -14,11 +14,30 @@ main {
 .nav {
 
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    gap: 10px;
     padding: 12px 0px;
+    position: relative
 
+}
+
+.nav__burger-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.nav__burger-ligne {
+    display: block;
+    width: 28px;
+    height: 2px;
+    background-color: #111;
+    border-radius: 2px;
 }
 
 .nav__logo {
@@ -34,15 +53,27 @@ main {
 }
 
 .nav__bar {
-    display: flex;
-    gap: 12px;
+    flex-direction: column;
+    position: absolute;
+    gap: 32px;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    width: 50%;
+    height: 100vw;
+    display: none;
+    top: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.38);
+}
+
+.nav__bar--ouvert {
+    display: flex;
 }
 
 .nav__link {
 
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 500;
     color: var(--couleur-texte);
     text-decoration: none;
@@ -339,7 +370,7 @@ svg {
 
 .footer {
     background: var(--fond-3);
-    margin-top: -65px;
+    margin-top: -37px;
     display: flex;
     justify-content: space-around;
     min-height: 60px;
