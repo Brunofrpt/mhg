@@ -55,10 +55,11 @@ main {
 .nav__bar {
     flex-direction: column;
     position: absolute;
-    gap: 32px;
+    gap: 13px;
     justify-content: center;
     align-items: center;
-    width: min(78vw, 280px);
+    width: min(72vw, 200px);
+    max-height: 371px;
     height: 100vw;
     margin-top: 1rem;
     padding: 1.25rem 1rem 0.6rem;
@@ -98,7 +99,7 @@ main {
     height: 1px;
     background-color: #d8b79d;
     /* transform: translateY(-50%); */
-    right: 22%;
+    right: 15%;
 }
 
 .nav__item--title::before {
@@ -108,7 +109,7 @@ main {
     width: 28px;
     height: 1px;
     background-color: #d8b79d;
-    left: 22%;
+    left: 15%;
 }
 
 .nav__item {
@@ -132,7 +133,7 @@ main {
 .nav__link {
 
     font-size: 1.05rem;
-    font-weight: 500;
+    font-weight: 300;
     color: #2e2a28;
     text-decoration: none;
     padding: 1rem 0.75rem;
