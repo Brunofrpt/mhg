@@ -121,7 +121,9 @@ main {
 .nav__item::before {
     content: "";
     height: 1px;
-    width: 90%;
+    left: 0.75rem;
+    right: 0.75rem;
+    bottom: 0;
     background-color: var(--couleur-separateur);
     position: absolute;
     bottom: 43px;
@@ -129,17 +131,16 @@ main {
 
 .nav__link {
 
-    font-size: 17px;
+    font-size: 1.05rem;
     font-weight: 500;
-    color: var(--couleur-texte);
+    color: #2e2a28;
     text-decoration: none;
-    padding: 6px 10px;
-    border-radius: 999px;
-
+    padding: 1rem 0.75rem;
+    transition: color 0.25s ease;
 }
 
 .nav__link:hover {
-    background: rgba(0, 0, 0, 0.06);
+    color: #b07a5f;
 }
 
 .nav__link+.nav__link::before {
