@@ -126,7 +126,7 @@ main {
     bottom: 0;
     background-color: var(--couleur-separateur);
     position: absolute;
-    bottom: 43px;
+    bottom: 64px;
 }
 
 .nav__link {
